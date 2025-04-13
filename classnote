@@ -1,0 +1,31 @@
+default 的export import時不用{}，非default 的要
+
+store 除了購物車以外多了colorSlice
+
+Sun/Moon是svg圖， 用的是licide-react套件
+
+對網頁refresh時memory中所有local/global值都會被清掉，回歸那些變數的初始值(stateless)，
+例如購物車數量歸零
+data persistance:
+cookie-old,small，瀏覽器關了資料就全沒
+local storage-一定要下指令才能清除資料，有資安問題
+安裝套件:yarn add redux-persist
+裝好後store.js和App.jsx都要import兩個東西 
+persistConfig設key&storage
+把cart,color包裝成新的persistslice
+reducer cart&color再把新的存進去
+*global state才要persist，期中要做
+-
+購物車有5個 點及商品圖進去看到的也應該要是5
+兩頁面間傳遞資料-query params
+網址?後面的就是query params，可以用&一直接
+-
+Routes裡都是router要整理到MainRouter裡去
+-
+-
+firebase (期中不管)
+安裝套件:yarn add firebase
+
+schema
+SQL資料庫有很多table 
+NOSQL沒有 會放在同個table比較好用
