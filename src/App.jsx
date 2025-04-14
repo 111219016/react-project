@@ -4,6 +4,9 @@ import { useState } from 'react'
 import './App.css'
 import Home from './pages/Home'
 import Shop from './pages/Shop'
+// import Category from './pages/Category'
+// import WorkDetail from './pages/WorkDetail'
+// import ObjectSorted from './pages/ObjectSorted'
 
 function App() {
   const [count, setCount] = useState(0)

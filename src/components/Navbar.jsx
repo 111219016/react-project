@@ -1,25 +1,32 @@
 import { NavLink } from 'react-router';
 
 export default function Navbar() {
-
   const navBarContent = [
     { to: "/", label: "Gallery" },
     { to: "/shop", label: "Shop" },
-  ];  
+  ];
 
   return (
-    <div className="flex flex-wrap justify-center">
+    <div className="flex flex-wrap justify-center mt-2">
       {navBarContent.map(({ to, label }) => (
         <NavLink
           key={to}
           to={to}
           className={({ isActive }) =>
-            `leading-[2] text-[3.3rem] mx-6 text-black text-base transition-all duration-500 ease-in-out ${
-              isActive ? "opacity-100 font-normal underline" : "opacity-60"
-            } hover:opacity-100 hover:[text-shadow:0px_0px_30px_white`
+            `relative group mx-6  leading-[2] text-[20px] transition-all duration-500 ease-in-out 
+             ${isActive ? "!text-black sm:text-[24px] opacity-100" : "!text-black sm:text-[24px] opacity-50 hover:opacity-100"}`
           }
         >
-          {label}
+          {({ isActive }) => (
+            <>
+              {label}
+              <span
+                className={`absolute left-0 bottom-0 h-[2px] bg-black transition-all duration-500 ${
+                  isActive ? "w-full" : "w-0 group-hover:w-full opacity-100"
+                }`}
+              />
+            </>
+          )}
         </NavLink>
       ))}
     </div>

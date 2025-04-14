@@ -9,6 +9,7 @@
  250412 {index.html & index.css:tailwindcss inserted}
         {writing in App.jsx}
         {font set} next:module
+250414 {App.jsx Shop, Home router;Home, Shop} combining code...
 -
 顏色可以直接在jsx裡改，因為已經import tailwindcss
 -

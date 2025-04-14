@@ -1,17 +1,20 @@
+import React from 'react';
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import WelcomeSection from '../components/WelcomeSection'
-import CarouselWrapper from '../components/CarouselWrapper'
+import CategoryCarousel from '../components/CategoryCarousel'
+import Objects from '../components/Objects'
 
 function Home() {
 
     return (
-      <div className="container main-layout min-h-screen ">
+      <div className="main-layout min-h-screen ">
         <Header />
         <WelcomeSection />
         <Navbar />
-        <CarouselWrapper />
+        <CategoryCarousel />
+        <Objects />
         <Footer className="footer" />
       </div>
     )
