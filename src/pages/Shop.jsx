@@ -22,7 +22,9 @@ function Shop() {
             <Header />
             <WelcomeSection />
             <Navbar />
+            
             <div className="form">
+                <h4 className='mt-5 mb-5 text-[#ce342c] justify-self-center'>我要訂購!</h4>
                 <form onSubmit={handleSubmit} className='justify-items-center'>
                     <label className='block text-[24px]  '>訂購人姓名<br></br>
                         <input

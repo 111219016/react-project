@@ -9,16 +9,16 @@ import Objects from '../components/Objects'
 
 function Home() {
 
-    return (
-      <div className="main-layout min-h-screen ">
-        <Header />
-        <WelcomeSection />
-        <Navbar />
-        <CategoryCarousel />
-        <Objects />
-        <Footer className="footer" />
-      </div>
-    )
-  }
-  
-  export default Home
+  return (
+    <div className="main-layout min-h-screen ">
+      <Header />
+      <WelcomeSection />
+      <Navbar />
+      <CategoryCarousel />
+      <Objects />
+      <Footer className="footer" />
+    </div>
+  )
+}
+
+export default Home

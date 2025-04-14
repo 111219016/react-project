@@ -1,4 +1,5 @@
 import { Link } from "react-router"
+import Heart from "./Heart"
 
 function Header() {
     return (
@@ -6,6 +7,7 @@ function Header() {
             <Link to="/">
                 <img src="/images/logo.svg" className="h-1/2 ml-6" />
             </Link>
+            <Heart />
         </header>
         
     );
