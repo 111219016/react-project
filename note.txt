@@ -12,6 +12,8 @@
 250414 merged code
         用git push -f 提交了新版本
         *強制push無法版本復原 慎用
+        21.&23.各交一次新版
+        c4people.json開始 圖片跟c3一樣
 -
 顏色可以直接在jsx裡改，因為已經import tailwindcss
 -
