@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import PeopleCarousel from '../components/PeopleCarousel';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
+import GallerySection from '../components/GallerySection';
 
 const CategoryPage = () => {
     const { id } = useParams();
@@ -19,7 +20,7 @@ const CategoryPage = () => {
             <Banner data={category} />
 
             <PeopleCarousel id={id} />
-
+            <GallerySection categoryId={id} />
             <Footer />
         </div>
     );
