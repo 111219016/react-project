@@ -7,7 +7,7 @@ import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import GallerySection from '../components/GallerySection';
 
-const CategoryPage = () => {
+const Category = () => {
     const { id } = useParams();
     const category = categoryData.find(item => item.id === id);
 
@@ -26,6 +26,6 @@ const CategoryPage = () => {
     );
 };
 
-export default CategoryPage;
+export default Category;
 
 

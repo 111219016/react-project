@@ -20,7 +20,9 @@ function App() {
             <Route path="displayed/:workId" element={<WorkDetail />} />
             <Route path="object/:objectName" element={<ObjectSorted />} />
           </Route> */}
-        <Route path="/category/:id" element={<Category />} />
+          {/* <Route path="/work/:category/:id" element={<WorkDetail />} /> */}
+          <Route path="/category/:id" element={<Category />} />
+        
         <Route path="shop" element={<Shop />} />
       </Routes>
     </BrowserRouter>
