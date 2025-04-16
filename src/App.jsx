@@ -5,7 +5,7 @@ import './App.css'
 import Home from './pages/Home'
 import Shop from './pages/Shop'
 import Category from './pages/Category'
-// import WorkDetail from './pages/WorkDetail'
+import WorkDetail from './pages/WorkDetail'
 // import ObjectSorted from './pages/ObjectSorted'
 
 function App() {
@@ -15,14 +15,19 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="gallery">
-            <Route path="category/:categoryName" element={<Category />} />
-            <Route path="displayed/:workId" element={<WorkDetail />} />
-            <Route path="object/:objectName" element={<ObjectSorted />} />
-          </Route> */}
-          {/* <Route path="/work/:category/:id" element={<WorkDetail />} /> */}
-          <Route path="/category/:id" element={<Category />} />
+        <Route path="gallery">
+          <Route path="category/:id" element={<Category />} />
+          <Route path="work/:category/:id" element={<WorkDetail />} />
+        </Route>
+
+
+        {/* <Route path="category/:categoryName" element={<Category />} /> */}
+        {/* <Route path="displayed/:workId" element={<WorkDetail />} />
+            <Route path="object/:objectName" element={<ObjectSorted />} /> */}
+
         
+        {/* <Route path="/category/:id" element={<Category />} /> */}
+
         <Route path="shop" element={<Shop />} />
       </Routes>
     </BrowserRouter>

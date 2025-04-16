@@ -16,7 +16,7 @@ const Category = () => {
     return (
         <div className="w-full  mx-auto bg-base-100">
             <Header />
-            <Navbar />
+            
             <Banner data={category} />
 
             <PeopleCarousel id={id} />

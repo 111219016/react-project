@@ -7,7 +7,7 @@ const CategoryCarousel = () => (
   <CarouselWrapper
     data={categoryData}
     title="Gallery"
-    linkPrefix="/category"
+    linkPrefix="/gallery/category"
   />
 );
 
