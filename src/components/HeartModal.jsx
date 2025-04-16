@@ -8,11 +8,7 @@
 //    const heartItems = useSelector(selectHeartItems);
 
 //    const handleCancel = () => toggleModal(!isOpen);
-//    const getTotalPrice = () => {
-//       return (heartItems.length > 0)
-//          ? heartItems.reduce((sum, item) => sum + item.price * item.qty, 0)
-//          : 0;
-//    };
+   
 
 //    return (
 //       <>
@@ -33,45 +29,23 @@
 //                            <div className="ml-8 flex-8 w-48 text-left">
 //                               <div className="font-medium mb-1">{item.name}</div>
 //                               <div className="flex items-center space-x-2">
-//                                  {/* <span>Qty:</span>
-//                                  <select
-//                                     defaultValue={item.qty}
-//                                     onChange={(e) =>
-//                                        dispatch(addCartItems({
-//                                           id: item.id,
-//                                           name: item.name,
-//                                           image: item.image,
-//                                           price: item.price,
-//                                           countInStock: item.countInStock,
-//                                           qty: Number(e.target.value),
-//                                        }))
-//                                     }
-//                                     className="select select-bordered select-xs w-[3.5rem] px-2"
-//                                  >
-//                                     {[...Array(item.countInStock).keys()].map((x) => (
-//                                        <option key={x + 1} value={x + 1}>{x + 1}</option>
-//                                     ))}
-//                                  </select> */}
+                                 
 //                               </div>
 //                            </div>
-//                            {/* <div className="text-right">
-//                               <div className="font-bold text-base">${item.price * item.qty}</div>
+//                            <div className="text-right">
+//                               {/* <div className="font-bold text-base">${item.price * item.qty}</div> */}
 //                               <div
 //                                  className="text-xl opacity-60 cursor-pointer"
 //                                  onClick={() => dispatch(removeHeartItems(item.id))}
 //                               >
 //                                  x
 //                               </div>
-//                            </div> */}
+//                            </div>
 //                         </li>
 //                      ))
 //                   )}
 
-//                   {/* Total */}
-//                   {/* <div className="flex justify-between items-center mt-4">
-//                      <div className="font-semibold">Total</div>
-//                      <div className="font-bold text-right">${getTotalPrice()}</div>
-//                   </div> */}
+                  
 
 //                   {/* Checkout Button */}
 //                   {/* <button

@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router'
-import { Provider } from "react-redux";
+// import { Provider } from "react-redux";
 // import { HelmetProvider } from 'react-helmet-async'
 import { useState } from 'react'
 import './App.css'
@@ -12,9 +12,9 @@ import WorkDetail from './pages/WorkDetail'
 
 function App() {
   const [count, setCount] = useState(0)
-
+//  store={store}
   return (
-    // <Provider store={store}>
+    // <Provider>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
