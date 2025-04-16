@@ -12,7 +12,7 @@ function HeartSummary() {
         >
 
             <div className="indicator">
-                {/* <span className="border indicator-item badge badge-[#ce342c] text-[#FFFBF3]">5</span> */}
+                <span className=" indicator-item badge badge-lg badge-neutral text-[#FFFBF3]">5</span>
                 <Heart size={48} strokeWidth={2} className="stroke-[#FFFBF3] hover:brightness-75 hover:fill-red-600 duration-300"/>
             </div>
 

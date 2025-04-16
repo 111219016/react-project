@@ -30,7 +30,7 @@ function Shop() {
                         <input
                             type="text"
                             name="username"
-                            className='border border-black hover:border-[#ce342c] hover:border-2 duration-300'
+                            className='border border-black hover:border-[#ce342c]  duration-300'
                             value={inputs.username || ""}
                             onChange={handleChange}
                         />
@@ -39,7 +39,7 @@ function Shop() {
                         <input
                             type="number"
                             name="phone"
-                            className='border border-black hover:border-[#ce342c] hover:border-2 duration-300'
+                            className='border border-black hover:border-[#ce342c]  duration-300'
                             value={inputs.age || ""}
                             onChange={handleChange}
                         />
@@ -48,7 +48,7 @@ function Shop() {
                         <input
                             type="text"
                             name="email"
-                            className='border border-black hover:border-[#ce342c] hover:border-2 duration-300'
+                            className='border border-black hover:border-[#ce342c] duration-300'
                             value={inputs.age || ""}
                             onChange={handleChange}
                         />
@@ -57,7 +57,7 @@ function Shop() {
                         <input
                             type="text"
                             name="address"
-                            className='border border-black hover:border-[#ce342c] hover:border-2 duration-300'
+                            className='border border-black hover:border-[#ce342c]  duration-300'
                             value={inputs.age || ""}
                             onChange={handleChange}
                         />

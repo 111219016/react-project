@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
-// import AddToHeart from '../components/AddToHeart';
+import AddToHeart from '../components/AddToHeart';
 import ShopButton from '../components/ShopButton';
 import Footer from '../components/Footer';
 
@@ -51,8 +51,9 @@ const WorkDetailPage = () => {
                   <p className="text-[18px] md:text-[20px]"><strong>年　份：</strong>{work.year}</p>
                   <p className="text-[18px] md:text-[20px]"><strong>原作尺寸：</strong>{work.size}</p>
                   <p className="text-[18px] md:text-[20px]"><strong>原作材質畫法：</strong>{work.material}</p>
+                  <AddToHeart />
                   </div>
-                  {/* <AddToHeart /> */}
+                  
                   {/* <img src="../images/addtoheart.svg" /> */}
               </div>
   

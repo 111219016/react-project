@@ -25,8 +25,8 @@ const WorkCard = ({ item }) => {
             </h4>
           </Link>
           
-          <div className="flex align-center mt-auto">
-            <p className="w-1/2 flex text-left items-center text-sm text-black opacity-60 sm:text-[12px] md:text-[14px]">
+          <div className="flex justify-between mt-auto">
+            <p className="w-fit flex text-left items-center text-sm text-black opacity-60 sm:text-[12px] md:text-[14px]">
               {item.author}
             </p>
             <AddToHeart />

@@ -4,6 +4,7 @@
  yarn add lodash
  yarn add react-helmet-async
  yarn add lucide-react
+ yarn add -D daisyui@latest
 -
  250411 19:34 {App.jsx router} {Header.jsx}
  250412 {index.html & index.css:tailwindcss inserted}

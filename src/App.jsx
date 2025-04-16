@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router'
-import { HelmetProvider } from 'react-helmet-async'
+import { Provider } from "react-redux";
+// import { HelmetProvider } from 'react-helmet-async'
 import { useState } from 'react'
 import './App.css'
 import Home from './pages/Home'
@@ -7,11 +8,13 @@ import Shop from './pages/Shop'
 import Category from './pages/Category'
 import WorkDetail from './pages/WorkDetail'
 // import ObjectSorted from './pages/ObjectSorted'
+// import store from '@/redux/store';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    // <Provider store={store}>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -31,6 +34,7 @@ function App() {
         <Route path="shop" element={<Shop />} />
       </Routes>
     </BrowserRouter>
+    // </Provider>
   )
 }
 
