@@ -3,7 +3,7 @@ import './footer.css';
 const Footer = () => {
     return (
 
-        <footer className="bg-black text-[#FFFBF3] py-6 mt-4">
+        <footer className="bg-black text-[#FFFBF3] py-6 mt-10">
             <div className="container mx-auto px-4 text-center space-y-2 sm:space-y-3 md:space-y-4">
                 <p className="text-[16px] sm:text-[16px] md:text-[24px] font-bold">名畫檔案</p>
                 <p className="text-[12px] sm:text-[12px] md:text-[16px] ">聯絡我們</p>
