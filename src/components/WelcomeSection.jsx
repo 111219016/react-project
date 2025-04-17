@@ -31,7 +31,7 @@ function WelcomeSection() {
                 <div className='bg-[#FFFFFF] h-2/5'></div>
                 
                 <div className="bg-[#FFFBF3] h-3/5 flex flex-col justify-between items-end p-4">
-                    <div className="font-bold sm:text-[12px] mr-60">
+                    <div className="font-bold sm:text-[12px] mr-[50%]">
                         <h1>名畫檔案</h1>
                     </div>
 
