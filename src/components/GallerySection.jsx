@@ -19,11 +19,15 @@ const GallerySection = ({ categoryId }) => {
   }, [categoryId]);
 
   return (
+    <>
+    <h5 className='flex justify-center m-5 mb-3 font-bold'>作品</h5>
+
     <div className="p-4 flex flex-wrap gap-4 justify-center mx-12">
       {works.map((item) => (
         <WorkCard key={item.id} item={{ ...item, category: categoryId }} />
       ))}
     </div>
+    </>
   );
 };
 
