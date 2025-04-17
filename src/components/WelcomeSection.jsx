@@ -1,4 +1,4 @@
-// import { Link } from "react-router";
+import { Link } from "react-router";
 import MoreButton from '../components/MoreButton';
 
 function WelcomeSection() {
@@ -41,7 +41,7 @@ function WelcomeSection() {
                 
                 {/* <h1 className='ml-10'>名畫檔案</h1> */}
                 <div></div>
-                <img src="/images/welcome-section.svg" className="relative -top-7/8 h-4/5 ml-20" />
+                <img src="/images/welcome-section.svg" className="relative w-1/2 -top-7/8 h-4/5 ml-20 drop-shadow-lg" />
             </div>
         </div>
 

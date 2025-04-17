@@ -6,7 +6,7 @@ import categoryData from '../json/category.json';
 const CategoryCarousel = () => (
   <CarouselWrapper
     data={categoryData}
-    title="Gallery"
+    title=""
     linkPrefix="/gallery/category"
   />
 );

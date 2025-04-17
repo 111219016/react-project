@@ -24,15 +24,19 @@ const PeopleCarousel = ({ id }) => {
       title="代表作家"
       linkPrefix="/people"
       renderItem={(item) => (
-        <div className="w-60 rounded-xl shadow p-4 bg-[#FFFBF3]">
-          <img
-            src={item.peoplephoto}
-            alt={item.peoplename}
-            className="h-40 w-full object-cover mb-2"
-          />
-          <h3 className="text-sm font-bold text-gray-600 text-[14px] sm:text-[16px] md:text-[18px]">
-            {item.peoplename}
-          </h3>
+        
+          <div className="card w-xs -mx-1 bg-[#FFFBF3] shadow-md p-10 flex-shrink-0 hover:scale-105 transition-transform duration-200">
+                    <figure className="w-full h-50 m-0 p-0 bg-gray-200">
+                      <img
+                        src={item.peoplephoto}
+                        alt={item.peoplename}
+                        className="w-full h-full object-cover"
+                      />
+                    </figure>
+                    <div className="mt-2">
+                      <h5 className="font-bold text-sm text-gray-600 sm:text-[16px] md:text-[18px]">{item.peoplename}</h5>
+                      
+                    </div>
         </div>
       )}
     />

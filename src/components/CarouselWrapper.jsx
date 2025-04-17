@@ -13,7 +13,7 @@ const CarouselWrapper = ({
   const totalItems = data.length;
   const intervalRef = useRef(null);
 
-  
+
   useEffect(() => {
     const updateVisibleCount = () => {
       const width = window.innerWidth;
@@ -27,7 +27,7 @@ const CarouselWrapper = ({
     return () => window.removeEventListener('resize', updateVisibleCount);
   }, []);
 
-  
+
   useEffect(() => {
     if (!isHovered) {
       intervalRef.current = setInterval(() => {
@@ -60,12 +60,11 @@ const CarouselWrapper = ({
 
   return (
     <div>
-      <h2 className="text-xl font-bold mb-4 text-center mt-6">{title}</h2>
-      <div className="relative w-full px-4 py-6 flex justify-center">
-        
+      <div className="relative w-full px-4 py-6 flex-row justify-items-center">
+      <h4 className="text-xl font-bold mb-4 text-center mt-6">{title}</h4>
 
         <div
-          className="flex items-center"
+          className="flex items-center "
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -76,31 +75,31 @@ const CarouselWrapper = ({
             ❮
           </button>
 
-          <div className="flex gap-4 overflow-hidden">
+          <div className="flex justify-center gap-8 overflow-hidden w-full">
             {getVisibleItems().map((item) => (
               <Link to={`${linkPrefix}/${item.id}`} key={item.id}>
                 {renderItem ? renderItem(item) : (
 
 
-                      <div className="card w-60 bg-[#FFFBF3] shadow-md p-3 flex-shrink-0 hover:scale-105 transition-transform duration-200">
-                        <figure className="w-full h-32 m-0 p-0 bg-gray-200">
-                          <img
-                            src={item.categoryphoto}
-                            alt={`Image of ${item.categoryname}`}
-                            className="w-full h-full object-cover opacity-50 hover:opacity-80 transition-opacity duration-200"
-                          />
-                        </figure>
-                        <div className="mt-2">
-                            <h3 className="font-bold text-sm text-gray-600 sm:text-[16px] md:text-[18px]">{item.categoryname}</h3>
-                            <p className="text-xs text-gray-600">
-                              {item.categorydetail?.replace(/\n/g, '').slice(0, 50)}...
-                            </p>
-                        </div>
-                      </div>
-              
-              
-                
-      
+                  <div className="card w-full bg-[#FFFBF3] shadow-md p-10 flex-shrink-0 hover:scale-105 transition-transform duration-200">
+                    <figure className="w-full h-32 m-0 p-0 bg-gray-200">
+                      <img
+                        src={item.categoryphoto}
+                        alt={`Image of ${item.categoryname}`}
+                        className="w-full h-full object-cover opacity-50 hover:opacity-80 transition-opacity duration-200"
+                      />
+                    </figure>
+                    <div className="mt-2">
+                      <h5 className="font-bold text-sm text-gray-600 sm:text-[16px] md:text-[18px]">{item.categoryname}</h5>
+                      <h6 className="text-xs text-gray-600">
+                        {item.categorydetail?.replace(/\n/g, '').slice(0, 50)}...
+                      </h6>
+                    </div>
+                  </div>
+
+
+
+
                 )}
               </Link>
             ))}
